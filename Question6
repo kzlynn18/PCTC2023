@@ -1,0 +1,10 @@
+def overflow():
+  press = int(input())
+  while press < 12:
+    press = press + int(input())
+
+  if press >= 12:
+    overflow_amount = press - 12
+    print(overflow_amount)
+
+overflow()
