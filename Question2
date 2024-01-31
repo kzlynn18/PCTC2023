@@ -1,0 +1,10 @@
+def ride():
+  money_given = int(input())
+  cost = int(input())
+  if 0 <= money_given and cost <= 100:
+    rides = money_given // cost
+    print(rides)
+  else: 
+    return "invalid input"
+
+ride()
