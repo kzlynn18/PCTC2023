@@ -1,0 +1,16 @@
+def check_password():
+  password = str(input())
+  password2 = str(input())
+  password3 = str(input())
+  if 1 <= len(password) and len(password2) and len(password3) <= 20:
+    if password == password2 == password3:
+      return "OK"
+    elif password != password2 and password != password3: 
+      return "BOTH MISMATCH"
+    elif password != password2 and password == password3: 
+      return "ENTRY 2 MISMATCH"
+    elif password == password2 and password != password3: 
+      return "ENTRY 3 MISMATCH"
+  else: 
+    return "Invalid input"
+check_password()
