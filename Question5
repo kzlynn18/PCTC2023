@@ -1,0 +1,14 @@
+def total_drink():
+  drink = input()
+  if drink == "t" or drink == "c":
+    refills = int(input())
+    if 0 <= refills <= 10: 
+      total = refills + 1
+      print(total)
+    else: 
+      return "Invalid input"
+  elif drink == "h":
+    print("1")
+  else:
+    return "Invalid input"
+total_drink()
