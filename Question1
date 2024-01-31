@@ -1,0 +1,8 @@
+def calculate_fee():
+  x = int(input())
+  y = int(input())
+  z = int(input())
+  annual_fee = x + y * z
+  print(annual_fee)
+
+calculate_fee()
