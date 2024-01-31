@@ -1,0 +1,6 @@
+def decrypt():
+  encrypted = input().upper()
+  decrypted = encrypted[2:] + encrypted[0:2]
+  print(decrypted)
+
+decrypt()
